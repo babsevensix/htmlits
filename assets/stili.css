@@ -1,0 +1,11 @@
+.sfondo{
+  background-color: rgb(80, 32, 237);
+}
+.grassetto{
+  font-weight: bold;
+  font-size: 48px;
+}
+.sfondo.grassetto{
+  font-size: 8px;
+  font-weight: normal;
+}
