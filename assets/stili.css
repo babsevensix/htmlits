@@ -1,3 +1,85 @@
+html,body{
+  font-family: 'Roboto';
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-main{
+  display: flex;
+  flex-direction: row;
+  height: 100%;;
+}
+
+.testata{
+  background-color: white;
+  /* border-color: black; */
+  /* border-style: none none solid none;
+  border-width: 1px 1px 3px 1px; */
+  /* border-bottom-style: solid;
+  border-bottom-width:3px ;
+  border-bottom-color: black ; */
+  border-bottom: solid 3px black;
+
+}
+.testata h1{
+  /* color: white; */
+  /* text-shadow:  2px 2px 2px black; */
+font-size:2em;
+font-style: normal;
+font-weight: 500;
+}
+
+.sidebar a{
+  background-color: red;
+}
+.sidebar{
+  /* margin-right: auto;
+  margin-left: auto; */
+  /* margin-top: 10px; */
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+ padding-left: 1rem;
+ padding-top: 1rem;
+ gap: 1rem;;
+ height: 100%;
+  /* padding: 10px; */
+  background-color: lightgray;
+  width: 33%;
+  /* max-width: 50px; */
+
+  /* border: solid 15px black; */
+  /* outline-style: solid;
+  outline-color: red;
+  outline-width: 15px;
+  outline-offset: 30px; */
+}
+
+.sidebar > a:hover{
+  background-color: white;
+}
+.sidebar > p{
+  background-color: aqua;
+}
+
+.main{
+  background-color: burlywood;
+  width: 66%;
+  display: block;
+  /* position: relative; */
+  overflow-y: auto;
+  height: 100%;
+}
+
 .sfondo{
   background-color: rgb(80, 32, 237);
 }
@@ -5,7 +87,72 @@
   font-weight: bold;
   font-size: 48px;
 }
-.sfondo.grassetto{
+/* .sfondo.grassetto{
   font-size: 8px;
   font-weight: normal;
+} */
+
+.center
+{ 
+  color: red;    
+}
+
+p{
+  font-size: 42px;
+}
+p.center{
+  color: yellowgreen;
+  background-color: red;
+  text-align: justify;
+  
+  text-decoration-style: solid;
+  text-decoration-color:blue ;
+  text-decoration-thickness: 2px;
+  text-decoration-line:underline ;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.posizionamento{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  font-size: 15px;
+}
+
+.main h2{
+  position: sticky;
+  top: 10px;
+  background-color: white;
+}
+
+
+@media screen and (min-width: 400px) {
+  .main{
+    background-color: yellow;
+  } 
+}
+
+@media screen and (max-width: 400px) {
+  html, body{
+    overflow: auto;
+    display: block;
+  }
+  
+  .wrapper-main{
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+  } 
+  .sidebar{
+    width: 100%;
+    height: auto;
+    padding: auto;
+  }
+  .main{
+    min-height: 200px;
+    height: 100%;
+    width: 100%;
+  }
 }
